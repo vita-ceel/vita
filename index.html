@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>فروشگاه پاستیل ویتا سیل</title>
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Vazir', sans-serif;
+      background-color: #0f261c;
+      color: #fff;
+    }
+    header {
+      background-color: #10321c;
+      padding: 20px;
+      text-align: center;
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      padding: 32px 16px;
+    }
+    .product-box {
+      background-color: #1e3a2a;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      max-width: 320px;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+    .product-box:hover {
+      transform: translateY(-6px);
+    }
+    .card {
+      padding: 20px;
+    }
+    .carousel {
+      position: relative;
+      width: 100%;
+    }
+    .carousel img {
+      width: 100%;
+      border-radius: 12px;
+      display: none;
+    }
+    .carousel img.active {
+      display: block;
+    }
+    .carousel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+      border: none;
+      color: #fff;
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 18px;
+      z-index: 2;
+    }
+    .carousel .prev { right: 8px; }
+    .carousel .next { left: 8px; }
+    .card h3 {
+      margin: 16px 0 12px;
+      font-size: 20px;
+      color: #8df59b;
+    }
+    .card p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #e2e2e2;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .product-box {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>فروشگاه محصولات ویتامین وگان ویتا سیل</header>
+
+<section class="container">
+
+  <!-- خواب -->
+  <div class="product-box">
+    <div class="card">
+      <div class="carousel">
+        <img src="sleep1.png" class="active">
+        <img src="sleep2.png">
+        <img src="sleep3.png">
+        <img src="sleep4.png">
+        <img src="sleep5.png">
+        <img src="sleep6.png">
+        <img src="sleep7.png">
+        <button class="prev">◀</button>
+        <button class="next">▶</button>
+      </div>
+      <h3 style="color: #b388ff;">پاستیل خواب ویتا سیل</h3>
+      <p>مناسب برای کمک به تنظیم چرخه خواب. حاوی پاسیفلورا، 5-HTP، ال-تیانین، عصاره ریشه سنبل‌الطیب و بابونه. فاقد گلوتن و وگان.</p>
+    </div>
+  </div>
+
+  <!-- پوست -->
+  <div class="product-box">
+    <div class="card">
+      <div class="carousel">
+        <img src="skin1.png" class="active">
+        <img src="skin2.png">
+        <img src="skin3.png">
+        <img src="skin4.png">
+        <img src="skin5.png">
+        <img src="skin6.png">
+        <button class="prev">◀</button>
+        <button class="next">▶</button>
+      </div>
+      <h3 style="color: #ff4d4d;">پاستیل پوست ویتا سیل</h3>
+      <p>حاوی هیالورونیک اسید، Q10، ALA، گلوتاتیون، بیوتین و ویتامین C برای کمک به شادابی و سلامت پوست. وگان و بدون گلوتن.</p>
+    </div>
+  </div>
+
+  <!-- ماچا -->
+  <div class="product-box">
+    <div class="card">
+      <div class="carousel">
+        <img src="matcha1.png" class="active">
+        <img src="matcha2.png">
+        <img src="matcha3.png">
+        <img src="matcha4.png">
+        <button class="prev">◀</button>
+        <button class="next">▶</button>
+      </div>
+      <h3>پاستیل ماچا ویتا سیل</h3>
+      <p>پاستیل ویتامینه وگان بدون شکر حاوی چای سبز ماچا، انرژی طبیعی را به صورت روزانه برای بدن فراهم می‌کند. مناسب برای افراد گیاه‌خوار.</p>
+    </div>
+  </div>
+
+  <!-- محصول جدید: کلاژن منیزیم -->
+  <div class="product-box">
+    <div class="card">
+      <div class="carousel">
+        <img src="collagen1.png" class="active">
+        <img src="collagen2.png">
+        <img src="collagen3.png">
+        <button class="prev">◀</button>
+        <button class="next">▶</button>
+      </div>
+      <h3 style="color: #1e3a8a;">کلاژن منیزیم ویتا سیل</h3>
+      <p>ترکیب Type I و III Collagen با منیزیم، بیوتین، ویتامین B6 و ۱۸ آمینواسید. بدون گلوتن، بدون شکر، غیرتراریخته. بدون طعم اضافه.</p>
+    </div>
+  </div>
+
+</section>
+
+<script>
+  document.querySelectorAll('.carousel').forEach(carousel => {
+    const images = carousel.querySelectorAll('img');
+    let current = 0;
+
+    function show(index) {
+      images.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
+    }
+
+    carousel.querySelector('.next').addEventListener('click', () => {
+      current = (current + 1) % images.length;
+      show(current);
+    });
+
+    carousel.querySelector('.prev').addEventListener('click', () => {
+      current = (current - 1 + images.length) % images.length;
+      show(current);
+    });
+  });
+</script>
+
+</body>
+</html>
